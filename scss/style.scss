@@ -21,22 +21,12 @@ body {
     align-items: flex-end;
     max-width: 70%;
     margin: 0 auto;
-    background-color: #F2F6F0;
+    background-image: url(../images/grafika-top.png);
+    background-size: cover;
+    background-position: right top;
 
     &__title {
-        text-decoration: none;
-        color: #3C3C3C;
-        font-weight: 600;
-        display: inline-block;
-        margin: 20px 20px 20px 40px;
-
-        h1 {
-            margin-top: 0;
-        }
-
-        h3 {
-            margin-bottom: 0;
-        }
+        padding-left: 40px;
     }
 
     @media screen and (min-width: 700px) {
@@ -53,7 +43,7 @@ body {
     &__logo {
         margin: 30px;
         width: 100%;
-        max-height: 100px;
+        
 
         @media screen and (min-width: 700px) {
             margin: 20px;
@@ -139,26 +129,46 @@ body {
 .hero {
     max-width: 70%;
     margin: 0 auto;
-    background-image: url(../images/grafika-top.png);
+    background-image: url(../images/timo-c-dinger-Oo3L5fL1lBU-unsplash.jpg);
     background-size: cover;
-    background-position: right top;
+    background-position: center;
+    color: #FFFCF2;
 
     &__text {
         padding: 100px;
 
+        & h1 {
+            font-size: 30px;
+        }
+
         & p {
             font-style: italic;
+            font-size: 16px;
         }
     }
 }
 
-.main, .pricelist {
+.main, .galery, .pricelist {
     max-width: 70%;
     margin: 0 auto;
     background-color: #F2F6F0;
 
     &__text {
         padding: 20px 40px;
+    }
+}
+
+.galery {
+    background-color: #D6DFC4;
+
+    &__images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        & img {
+            width: 100%;
+            max-height: 350px;
+        }
     }
 }
 
@@ -189,7 +199,7 @@ body {
         color: #FFFCF2;
     }
 
-    &__middleright {
+    &__left {
         padding: 100px 20px 0 20px;
     }
 
@@ -202,7 +212,7 @@ body {
         justify-content: center;
         align-items: flex-end;
         
-        &__middleright {
+        &__left {
             padding: 100px 20px 20px 20px;
         }
     
@@ -220,7 +230,7 @@ body {
     }
 
     @media screen and (min-width: 700px) {
-        &__middleright {
+        &__left {
             padding-top: 150px;
         }
     

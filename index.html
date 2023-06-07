@@ -13,8 +13,7 @@
 <body>
     <header class="header">
         <a class="header__title" href="#"> 
-           <h1>Rizikové kácení</h1>
-           <h3>Jakub Holeček</h3>
+           <img src="images/logo.png" alt="logo" width="200px">
         </a>
     
         <nav class="menu">
@@ -24,13 +23,13 @@
             <ul class="menu__list">
                 <li class="menu__item"><a class="menu__link" href="#">Úvod</a></li>
     
-                <li class="menu__item"><a class="menu__link" href="#">Rizikové kácení</a></li>
+                <li class="menu__item"><a class="menu__link" href="#service">Rizikové kácení</a></li>
     
-                <li class="menu__item"><a class="menu__link" href="#">Fotogalerie</a></li>
+                <li class="menu__item"><a class="menu__link" href="#galery">Fotogalerie</a></li>
     
-                <li class="menu__item"><a class="menu__link" href="#">Ceník</a></li>
+                <li class="menu__item"><a class="menu__link" href="#price">Ceník</a></li>
     
-                <li class="menu__item"><a class="menu__link" href="#">Kontakt</a></li>
+                <li class="menu__item"><a class="menu__link" href="#contact">Kontakt</a></li>
             </ul>
         </nav>
     </header>
@@ -42,7 +41,7 @@
         </div>
     </section>
 
-    <main class="main">
+    <section class="main" id="service">
         <div class="main__text">
             <h2>Rizikové kácení stromů</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam velit quaerat hic autem reiciendis, sunt porro dolores, fugiat maiores laborum consequuntur illo cumque atque? Sequi id iure voluptatem? Error, maiores.</p>
@@ -58,9 +57,24 @@
             <h2>Bezpečnost</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam velit quaerat hic autem reiciendis, sunt porro dolores, fugiat maiores laborum consequuntur illo cumque atque? Sequi id iure voluptatem? Error, maiores.</p>
         </div>
-    </main>
+    </section>
 
-    <section class="pricelist">
+    <section class="galery" id="galery">
+        <div class="galery__text">
+            <h1>Fotogalerie</h1>
+        </div>
+
+        <div class="galery__images">
+            <img src="images/10.JPG" alt="Kácení 1">
+            <img src="images/8.JPG" alt="Kácení 2">
+            <img src="images/5.JPG" alt="Kácení 3">
+            <img src="images/11.JPG" alt="Kácení 4">
+            <img src="images/3.JPG" alt="Kácení 5">
+            <img src="images/13.JPG" alt="Kácení 6">
+        </div>
+    </section>
+
+    <section class="pricelist" id="price">
         <div class="pricelist__text">
             <h1>Ceník</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur repellat corrupti tenetur doloremque soluta voluptatem possimus veniam neque iusto consequatur beatae unde cupiditate fuga iste, voluptas minus quas placeat tempora.</p>
@@ -90,19 +104,17 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer__middleright">
-            <div class="footer__icons">
-                <a  class="footer__icon" href="https://www.facebook.com/jakubholecekkralupy" target="_blank"><img src="images/icons8-facebook.png" alt="IconFacebook"></a>
-            </div>
-            <p class="footer__phone">+420 608 402 178</p>
-            <p class="footer__e-mail"><a class="footer__link" href="mailto:kacenizlana@seznam.cz">kacenizlana@seznam.cz</a></p>
+    <footer class="footer" id="contact">
+        <div class="footer__left">
+            <a href="https://www.facebook.com/jakubholecekkralupy" target="_blank"><img src="images/icons8-facebook.png" alt="Facebook"></a>
+            <p>+420 608 402 178</p>
+            <p><a class="footer__link" href="mailto:kacenizlana@seznam.cz">kacenizlana@seznam.cz</a></p>
         </div>
         
         <div class="footer__right">
-            <p class="footer__title"><b>Jakub Holeček</b><br>
+            <p><b>Jakub Holeček</b><br>
                 IČO: 17686318</p>
-            <p class="footer__address">Pražská 41/25<br>
+            <p>Pražská 41/25<br>
                 278 01 Kralupy nad Vltavou</p>
         </div>
     </footer>
