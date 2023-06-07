@@ -1,0 +1,231 @@
+// Tmavě šedá – #3C3C3C
+// Světle šedá – #737373
+// Přechodová šedá – #B8B8B8
+// Zelená – #D6DFC4
+// Světle zelená – #F2F6F0
+// Přechodová zelená - #FFFCF2
+
+body {
+    background-color: #FFFCF2;
+    color: #3C3C3C;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: 'Geologica', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 70%;
+    margin: 0 auto;
+    background-color: #F2F6F0;
+
+    &__title {
+        text-decoration: none;
+        color: #3C3C3C;
+        font-weight: 600;
+        display: inline-block;
+        margin: 20px 20px 20px 40px;
+
+        h1 {
+            margin-top: 0;
+        }
+
+        h3 {
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: 700px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    @media screen and (min-width: 1100px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__logo {
+        margin: 30px;
+        width: 100%;
+        max-height: 100px;
+
+        @media screen and (min-width: 700px) {
+            margin: 20px;
+        }
+
+        @media screen and (min-width: 1100px) {
+            margin-left: 30px;
+        }
+    }
+}
+
+.menu {
+    margin: 0;
+
+    @media screen and (min-width: 700px) {
+        margin: 20px;
+    }
+
+    @media screen and (min-width: 1100px) {
+        margin-right: 40px;
+    }
+
+    &__checkbox {
+        position: absolute;
+        left: -9999px;
+
+        &:checked ~ .menu__list {
+            display: block;
+        }
+    }
+    
+    &__toggler {
+        font-size: 30px;
+        margin-right: 30px;
+        align-items: flex-end;
+        cursor: pointer;
+
+        @media screen and (min-width: 700px) {
+            display: none;
+        }
+    }
+
+    &__list {
+        display: none;
+        list-style: none;
+        position: fixed;
+        right: 0;
+        z-index: 3;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #FFFCF2;
+        text-align: center;
+
+        @media screen and (min-width: 700px) {
+            display: flex !important;
+            position: static;
+            background-color: #F2F6F0;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #3C3C3C;
+        font-weight: 600;
+        display: inline-block;
+        padding: 10px 10px 5px 10px;
+
+        @media screen and (min-width: 700px) {
+            padding: 15px 15px 10px 15px;
+        }
+
+        &:hover, &:active {
+            background-color: #D6DFC4;
+        }
+    }
+}
+
+.menu__link--active {
+    background-color: #D6DFC4;
+}
+
+.hero {
+    max-width: 70%;
+    margin: 0 auto;
+    background-image: url(/images/grafika-top.png);
+    background-size: cover;
+    background-position: right top;
+
+    &__text {
+        padding: 100px;
+
+        & p {
+            font-style: italic;
+        }
+    }
+}
+
+.main, .pricelist {
+    max-width: 70%;
+    margin: 0 auto;
+    background-color: #F2F6F0;
+
+    &__text {
+        padding: 20px 40px;
+    }
+}
+
+.pricelist {
+    background-color: #D6DFC4;
+
+    &__list p {
+        font-style: italic;
+        margin: 0;
+    }
+
+    &__list h3 {
+        margin-top: 25px;
+        margin-bottom: 5px;
+    }
+}
+
+.footer {
+    max-width: 70%;
+    margin: 0 auto;
+    background-image: url(/images/grafika-bottom.png);
+    background-size: cover;
+    background-position: right top;
+    color: #FFFCF2;
+    text-align: center;
+
+    &__link {
+        color: #FFFCF2;
+    }
+
+    &__middleright {
+        padding: 100px 20px 0 20px;
+    }
+
+    &__right {
+        padding: 0 20px 20px 20px;
+    }
+
+    @media screen and (min-width: 700px) {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        
+        &__middleright {
+            padding: 100px 20px 20px 20px;
+        }
+    
+        &__right {
+            padding: 100px 20px 20px 20px;
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        justify-content: flex-end;
+
+        &__right {
+            padding-right: 40px;
+        }
+    }
+
+    @media screen and (min-width: 700px) {
+        &__middleright {
+            padding-top: 150px;
+        }
+    
+        &__right {
+            padding-top: 150px;
+        }
+    }
+}
