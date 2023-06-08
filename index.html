@@ -101,7 +101,48 @@
         </div>
     </section>
 
-    <footer class="footer" id="contact">
+    <section class="contact" id="contact">
+        <div class="contact__text">
+            <h1 class="title">Kontakt</h1>
+            <p>Chcete si objednat moje služby, nebo máte nějaký dotaz? Neváhejte se na mě obrátit. Využít můžete buď kontaktní formulář níže na stránce nebo mi zavolejte nebo napište e-mail.</p>
+        </div>
+
+        <div class="contact__wrapper">
+            <form class="contact__form" action="http://formular.itgirls.cz" method="post">
+                <div class="contact__form-field">
+                    <label for="jmeno">Jméno</label>
+                    <input type="text" name="jmeno" id="jmeno" placeholder=" " required>
+                </div>
+
+                <div class="contact__form-field">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+        
+                <div class="contact__form-field">
+                    <label for="adresa">Zpráva</label>
+                    <textarea name="adresa" id="adresa" rows="10"></textarea>
+                </div>
+        
+            <button type="submit" class="contact__button">Odeslat</button>
+            </form>
+
+            <div class="contact__info">
+                <h3>Jakub Holeček</h3>
+                <div class="contact__phone">
+                    <img src="images/icons8-phone-50.png" alt="phone number">
+                    <p>+420 608 402 178</p>
+                </div>
+
+                <div class="contact__email">
+                    <img src="images/icons8-mail-50.png" alt="email address">
+                    <p><a class="contact__link" href="mailto:kacenizlana@seznam.cz">kacenizlana@seznam.cz</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
         <div class="footer__left">
             <a href="https://www.facebook.com/jakubholecekkralupy" target="_blank"><img src="images/icons8-facebook.png" alt="Facebook"></a>
             <p>+420 608 402 178</p>
