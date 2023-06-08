@@ -12,8 +12,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  max-width: 70%;
-  margin: 0 auto;
   background-image: url(../images/grafika-top.png);
   background-size: cover;
   background-position: right top;
@@ -25,12 +23,15 @@ body {
   .header {
     flex-direction: column;
     align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1100px) {
   .header {
     flex-direction: row;
     align-items: flex-end;
+    max-width: 70%;
   }
 }
 .header__logo {
@@ -105,9 +106,15 @@ body {
   display: inline-block;
   padding: 10px 10px 5px 10px;
 }
+.menu__link:hover, .menu__link:active {
+  background-color: #D6DFC4;
+}
 @media screen and (min-width: 700px) {
   .menu__link {
     padding: 15px 15px 10px 15px;
+  }
+  .menu__link:hover, .menu__link:active {
+    background-color: #F2F6F0;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -115,37 +122,50 @@ body {
     padding: 12px;
   }
 }
-.menu__link:hover, .menu__link:active {
-  background-color: #F2F6F0;
-}
-
-.menu__link--active {
-  background-color: #F2F6F0;
-}
 
 .hero {
-  max-width: 70%;
-  margin: 0 auto;
   background-image: url(../images/timo-c-dinger-Oo3L5fL1lBU-unsplash.jpg);
   background-size: cover;
   background-position: center;
   color: #FFFCF2;
+}
+@media screen and (min-width: 700px) {
+  .hero {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .hero {
+    max-width: 70%;
+  }
 }
 .hero__text {
   padding: 100px;
 }
 .hero__text h1 {
   font-size: 30px;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
 }
 .hero__text p {
   font-style: italic;
   font-size: 16px;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
 }
 
 .main, .galery, .pricelist {
-  max-width: 70%;
-  margin: 0 auto;
   background-color: #F2F6F0;
+}
+@media screen and (min-width: 700px) {
+  .main, .galery, .pricelist {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .main, .galery, .pricelist {
+    max-width: 70%;
+  }
 }
 .main__text, .galery__text, .pricelist__text {
   padding: 20px 40px;
@@ -156,11 +176,23 @@ body {
 }
 .galery__images {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 500px) {
+  .galery__images {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .galery__images {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 .galery__images img {
   width: 100%;
-  max-height: 350px;
+  aspect-ratio: 3/4;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .pricelist {
@@ -175,14 +207,33 @@ body {
   margin-bottom: 5px;
 }
 
+.title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  background-color: #FFFCF2;
+  margin-top: 10px;
+  margin-left: -40px;
+}
+
 .footer {
-  max-width: 70%;
-  margin: 0 auto;
   background-image: url(../images/grafika-bottom.png);
   background-size: cover;
   background-position: right top;
   color: #FFFCF2;
   text-align: center;
+}
+@media screen and (min-width: 700px) {
+  .footer {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .footer {
+    max-width: 70%;
+  }
 }
 .footer__link {
   color: #FFFCF2;

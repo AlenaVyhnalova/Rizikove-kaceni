@@ -19,8 +19,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    max-width: 70%;
-    margin: 0 auto;
     background-image: url(../images/grafika-top.png);
     background-size: cover;
     background-position: right top;
@@ -32,11 +30,14 @@ body {
     @media screen and (min-width: 700px) {
         flex-direction: column;
         align-items: center;
+        max-width: 90%;
+        margin: 0 auto;
     }
 
     @media screen and (min-width: 1100px) {
         flex-direction: row;
         align-items: flex-end;
+        max-width: 70%;
     }
 
     &__logo {
@@ -111,50 +112,66 @@ body {
         display: inline-block;
         padding: 10px 10px 5px 10px;
 
+        &:hover, &:active {
+            background-color: #D6DFC4
+        }
+
         @media screen and (min-width: 700px) {
             padding: 15px 15px 10px 15px;
+
+            &:hover, &:active {
+                background-color: #F2F6F0;
+            }
         }
 
         @media screen and (min-width: 1400px) {
             padding: 12px;
         }
-
-        &:hover, &:active {
-            background-color: #F2F6F0;
-        }
     }
 }
 
-.menu__link--active {
-    background-color: #F2F6F0;
-}
-
 .hero {
-    max-width: 70%;
-    margin: 0 auto;
     background-image: url(../images/timo-c-dinger-Oo3L5fL1lBU-unsplash.jpg);
     background-size: cover;
     background-position: center;
     color: #FFFCF2;
+
+    @media screen and (min-width: 700px) {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: 1100px) {
+        max-width: 70%;
+    }
 
     &__text {
         padding: 100px;
 
         & h1 {
             font-size: 30px;
+            text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
         }
 
         & p {
             font-style: italic;
             font-size: 16px;
+            text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
         }
     }
 }
 
 .main, .galery, .pricelist {
-    max-width: 70%;
-    margin: 0 auto;
     background-color: #F2F6F0;
+
+    @media screen and (min-width: 700px) {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: 1100px) {
+        max-width: 70%;
+    }
 
     &__text {
         padding: 20px 40px;
@@ -166,11 +183,20 @@ body {
 
     &__images {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+
+        @media screen and (min-width: 500px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media screen and (min-width: 1000px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
 
         & img {
             width: 100%;
-            max-height: 350px;
+            aspect-ratio: 3/4;
+            object-fit: contain;
         }
     }
 }
@@ -189,14 +215,31 @@ body {
     }
 }
 
+.title::after {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 5px;
+	background-color: #FFFCF2;
+	margin-top: 10px;
+	margin-left: -40px;
+}
+
 .footer {
-    max-width: 70%;
-    margin: 0 auto;
     background-image: url(../images/grafika-bottom.png);
     background-size: cover;
     background-position: right top;
     color: #FFFCF2;
     text-align: center;
+
+    @media screen and (min-width: 700px) {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: 1100px) {
+        max-width: 70%;
+    }
 
     &__link {
         color: #FFFCF2;
