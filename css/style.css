@@ -283,6 +283,18 @@ body {
   margin-left: -40px;
 }
 
+.button--up {
+  background-color: #737373;
+  opacity: 0.5;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.button--up:hover {
+  opacity: 1;
+}
+
 .footer {
   background-image: url(../images/grafika-bottom.png);
   background-size: cover;
