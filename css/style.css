@@ -316,6 +316,16 @@ body {
 .footer__link {
   color: #FFFCF2;
 }
+.footer__link--dark {
+  color: #B8B8B8;
+}
+.footer__text {
+  color: #B8B8B8;
+  margin: 0;
+}
+.footer__text--copy {
+  padding-bottom: 20px;
+}
 .footer__left {
   padding: 100px 20px 0 20px;
 }
@@ -323,7 +333,7 @@ body {
   padding: 0 20px 20px 20px;
 }
 @media screen and (min-width: 700px) {
-  .footer {
+  .footer__wrapper {
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -336,7 +346,7 @@ body {
   }
 }
 @media screen and (min-width: 900px) {
-  .footer {
+  .footer__wrapper {
     justify-content: flex-end;
   }
   .footer__right {
