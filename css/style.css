@@ -143,13 +143,9 @@ body {
 .hero__text {
   padding: 100px;
 }
-.hero__text h1 {
-  font-size: 30px;
-  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
-}
 .hero__text p {
   font-style: italic;
-  font-size: 16px;
+  font-size: 24px;
   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
 }
 
